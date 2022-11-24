@@ -44,7 +44,7 @@ const formatPrice = (price) =>
     // Wrap Img and priceAndTitle
     // <div class="md:flex bg-white rounded-lg p-6">
     const card = document.createElement("div");
-    card.className = "md:flex bg-white rounded-lg p-6 hover:bg-gray-300";
+    card.className = "md:flex bg-white rounded-lg p-6 hover:bg-green-100 cursor-pointer";
     card.appendChild(image);
     card.appendChild(priceAndTitle);
 
