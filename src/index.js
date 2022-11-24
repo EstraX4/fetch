@@ -26,5 +26,5 @@ window
 
       todosLosItems.push(container);
     });
-    document.body.append(...todosLosItems);
+    appNode.append(...todosLosItems);
   });
