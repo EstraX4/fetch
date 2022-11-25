@@ -1,6 +1,16 @@
 const baseUrl = "https://platzi-avo.vercel.app";
 const mountNode = document.getElementById("js-mount");
 
+mountNode.addEventListener("click", (event) => {
+  if (event.target.nodeName === "H2") {
+    window.alert("clickeaste el titulo")
+  } if (event.target.nodeName === "IMG") {
+    window.alert("clickeaste la imagen")
+  } if (event.target.nodeName === "DIV") {
+    window.alert("clickeaste el precio")
+  }
+});
+
 const formatPrice = (price) =>
   new Intl.NumberFormat("en-EN", {
     style: "currency",
@@ -27,6 +37,8 @@ const formatPrice = (price) =>
     const title = document.createElement("h2");
     title.className = "text-lg";
     title.textContent = avocado.name;
+    
+    
 
     // Create Price
     // <div class="text-gray-600">(555) 765-4321</div>
